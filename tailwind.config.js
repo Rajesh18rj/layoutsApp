@@ -11,6 +11,9 @@ export default {
     ],
     theme: {
         extend: {
+            colors: {
+                'pure-red': '#f44747'
+            },
             fontFamily: {
                 lora: ['"Lora", serif'] ,
 

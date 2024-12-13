@@ -34,9 +34,29 @@
 {{--    <p class="text-6xl"> 6x Extra Large</p>--}}
 
             <!--Other Font Classes-->
+{{--            <h1 class="text-3xl font-bold">Sample <span class="font-light">Title</span></h1>--}}
+{{--            <p>--}}
+{{--                <span class="font-bold underline">Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.--}}
+{{--                <span class='leading-10'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.--}}
+{{--                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.--}}
+{{--                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>--}}
+{{--            </p>--}}
 
+            <!--Colors-->
+{{--        <div class="h-8 bg-green-50"></div>--}}
+{{--        <div class="h-8 bg-green-100"></div>--}}
+{{--        <div class="h-8 bg-green-200"></div>--}}
+{{--        <div class="h-8 bg-green-300"></div>--}}
+{{--        <div class="h-8 bg-green-500"></div>--}}
 
+{{--            <div class="h-8 bg-pure-red"></div>--}}
 
+{{--        <div class="text-green">Rajesh</div>--}}
+
+            <!--Padding and Margin-->
+            <button class="text-gray-700 bg-yellow-300 px-4 py-4 mt-4 ml-4 border-4 border-red-500 rounded-xl hover:bg-white hover:text-green-500">Click Me</button>
+
+            <!--Border and Hover-->
 
 
 
