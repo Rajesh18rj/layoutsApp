@@ -105,7 +105,9 @@ inga ipdi kuduthuttu.. antha 'pure-red' ndra property use panni enga venum nalum
 
 -> Text Colors:::
 
-    text-green
+    text-green-400
+    text-gray-700
+etc.. 
 
 intha mari text nu kuduthuttu athuku pinnadi enna color venumo athu kuduthukalam.. 
 
@@ -247,8 +249,30 @@ hover:text-green-500  then athulaiye innoru hover kudukuren.. so ipo mouse ah ho
 
 # Layout
 
+ <!--Layout-->
+            <div class="container border border-red-400 mt-10 mx-auto rounded-lg ">
+                <h1 class="pt-3 pl-4"> You are Making Parents Proud</h1>
+                <p class="p-4">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                    "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...""Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                    "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
 
+                <div class="flex justify-center">
+                    <button class="text-gray-700 bg-yellow-300 px-4 py-4 mt-4 ml-4 border-4 border-red-500 rounded-xl hover:bg-white hover:text-green-500 my-3">Click Me</button>
+                </div>
 
+            </div>
+
+The container class in Tailwind CSS is like a box that helps keep your drawing (or content) neatly centered on the paper.
+
+<div class="container mx-auto"> it makes that container center whatever it happens..
+
+then if we want to move the button in center .. first we should put that in div .. then use flex justify-center
+
+# Responsive classes
+
+ithu epo use aagum naa .. screen size ku yetha mari olu sila vishayatha mathurathu.. 
+
+for example mobile , laptop , pc , tablet ovoru screen ku yetha mari, webpage la yethavathu kaatanum nu nenacha ithu use aagum.. 
 
 
 

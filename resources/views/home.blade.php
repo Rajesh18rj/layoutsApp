@@ -54,12 +54,22 @@
 {{--        <div class="text-green">Rajesh</div>--}}
 
             <!--Padding and Margin-->
-            <button class="text-gray-700 bg-yellow-300 px-4 py-4 mt-4 ml-4 border-4 border-red-500 rounded-xl hover:bg-white hover:text-green-500">Click Me</button>
 
             <!--Border and Hover-->
- heyyy
+{{--            <button class="text-gray-700 bg-yellow-300 px-4 py-4 mt-4 ml-4 border-4 border-red-500 rounded-xl hover:bg-white hover:text-green-500">Click Me</button>--}}
 
+{{--            <!--Layout-->--}}
+{{--            <div class="container border border-red-400 mt-10 mx-auto rounded-lg ">--}}
+{{--                <h1 class="pt-3 pl-4"> You are Making Parents Proud</h1>--}}
+{{--                <p class="p-4">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."--}}
+{{--                    "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...""Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."--}}
+{{--                    "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>--}}
 
+{{--                <div class="flex justify-center">--}}
+{{--                    <button class="text-gray-700 bg-yellow-300 px-4 py-4 mt-4 ml-4 border-4 border-red-500 rounded-xl hover:bg-white hover:text-green-500 my-3">Click Me</button>--}}
+{{--                </div>--}}
+
+{{--            </div>--}}
 
 
 </body>
