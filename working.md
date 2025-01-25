@@ -274,7 +274,251 @@ ithu epo use aagum naa .. screen size ku yetha mari olu sila vishayatha mathurat
 
 for example mobile , laptop , pc , tablet ovoru screen ku yetha mari, webpage la yethavathu kaatanum nu nenacha ithu use aagum.. 
 
+        <div class="bg-gray-300 md:bg-green-400 lg:bg-red-300">
+            <p class="text-lg">Background color change</p>
+        </div>
 
+ithula pathom naa.. default ah background color gray kuduthurukom.. then screen size medium ah iruntha green ah maarum.. large ah iruntha red ah maarum..
 
+ithey mari screen size base panni oru sila vishayam dynamic ah pannalam..
 
+# flex box 
+1)
+<div class="container flex">
+    <div class="bg-green-400">Content 1</div>
+    <div class="bg-blue-400">Content 2</div>
+    <div class="bg-red-400">Content 3</div>
+</div>
+
+ithu basic ah left to right {Row direction la} ah athukulla iruka content ah yeduthutu poidum..
+output:::  Content 1 Content 2 Content 3
+
+or we can use <div class="container flex flex-row"> this is also same 
+
+2)
+<div class="container flex flex-col">
+
+flex-col nu kuduthaa , column direction la content ah yeduthuttu poidum .. 
+Output::
+
+Content 1
+Content 2
+Content 3
+
+ithaiye namma responsive ku yetha mariyum kaatalam.. 
+
+<div class="container flex flex-col md:flex-row">
+ithula default ah column la theriyum , epo screen size perusa aagutho , apo row ah theriyum.. 
     
+# justify content 
+intha screen la Content yentha yedathula irukanum ndratha mudivu panrathu than intha justify classes and allign classes
+
+so intha row classes vachey example pakalam..
+<div class="container flex flex-row justify-start">
+
+justify-start-> nu kuduthom naa.. row la starting point laiye irukum
+justify-center-> now content center ku poidum (row direction la )
+justify-end->  ipdi kudutha end la poi nikkum (row direction la )
+justify-between -> ipdi kudutha content 1 starting laiyum, content 2 centerlaiyum.. content 3 end laiyum nikkum
+justify-around -> ipo namaku .. content 1 ku munnadiyum , content 3 ku pinnadiyum gap venum nu nenacha .. justify around kudukalam .. 
+
+ipo namma panna ithey velaiye nammalala flex-col direction ku panna mudiyathu.. becoz ithoda direction up to down ah irukathunaala , 
+so intha mari situations la items classes ah use panlam.. 
+
+# align items 
+<div class="container flex flex-col items-center ">
+
+items-center -> ithu enna pannum naa center ku yeduthutu poirum (column direction la )
+items-start -> ithu starting la nippaatum..
+items-end -> ithu end la nippatum 
+
+so column class ah use pannum pothu .. items class than use pannanum
+
+items-stretch -> ithu enna pannum naa , intha item ku iruka motha width ahyum iluthukm.. 
+items-baseline -> ithu enna pannum na .. yevlo width exact ah venumo atha mattum occupy pannum.. extra 1mm kooda yedukathu
+
+so column naa items classes ah use pannanum.. row naa justify classes ah use pananum . 
+
+# flex grow
+
+so ithuku namma flex row ah yeduthukalam.. 
+
+<div class="container flex flex-row">
+    <div class="bg-green-400 flex-grow">Content 1</div>       #note here
+    <div class="bg-blue-400">Content 2</div>
+    <div class="bg-red-400">Content 3</div>
+</div>
+
+ipdi kudukum pothu.. first content mattum jasthi width yeduthukuthu.. 
+output::
+Content1                      Content2 Content3
+-------------------------------------------------------------------------------------
+<div class="container flex flex-row">
+    <div class="bg-green-400 flex-grow">Content 1</div>       #note here
+    <div class="bg-blue-400 flex-grow">Content 2</div>        # note here too
+    <div class="bg-red-400">Content 3</div>
+</div>
+ipo pathom naa.. first 2 content ku mattum athiga width irukum.. 3 ku irukathu 
+---------------------------------------------------------------------------------------
+
+<div class="container flex flex-row">
+    <div class="bg-green-400 flex-grow">Content 1</div>       #note here
+    <div class="bg-blue-400 flex-grow">Content 2</div>        # note here 
+    <div class="bg-red-400 flex-grow ">Content 3</div>                   # note here too
+</div>
+ipo pathom naa .. 3 ku same level width iruku .. 
+--------------------------------------------------------------------------------------------
+    <div class="bg-green-400 flex-grow-0">Content 1</div>       #note here
+
+flex-grow-0 -> ipo first content ku mattum width 0 kuduthaa.. first ku mattum width 0 kudukuren .. matha yellathukum width kudukuren nu meaning 
+
+------------------------------------------------------------------------------------------------------------------------------------------
+or we can use 'flex-1' instead of 'flex-grow'
+
+
+# Grid Layout 
+Flex Box mari innoru layout than Grid 
+
+ithula enna pannalam na , Content ah box, box ah seperate pannalam... 
+
+<div class="container grid grid-cols-2 ">                  #note here
+    <div class="bg-green-400 flex-1">Content 1</div>
+    <div class="bg-blue-400 flex-grow">Content 2</div>
+    <div class="bg-red-400 flex-grow">Content 3</div>
+    <div class="bg-green-400 flex-1">Content 4</div>
+    <div class="bg-blue-400 flex-grow">Content 5</div>
+    <div class="bg-red-400 flex-grow">Content 6</div>
+</div>
+
+ithu enna pannum naa.. content ah column direction la 2 ah pirichidum..
+
+Content 1                               Content 2
+Content 3                               Content 4
+Content 5                               Content 6
+
+intha mari.. 
+
+suppose
+[grid grid-cols-3]  3nu kudutha.. 3 column ah pirichidum..
+Content 1          Content 2             Content 3        
+Content 4          Content 5             Content 6       
+   
+intha marii.. 
+
+intha mari 4 , 5 , 6 evlo venalum kaatalam.. 
+
+ipo intha box ku naduvula gap venum nu nenacha gap nu oru class iruku.. 
+<div class="container grid grid-cols-2 gap-3">                  #note here
+
+gap-0 
+gap-1
+gap-2
+etc...
+
+intha mari evlo gap venum nu nenachalum gap add pannikalam.. 
+
+# Dark Mode 
+this one for who loves dark mode 
+
+Namma website ku dark mode ah epdi support panna vaikurathu ndrthu than paaka porom..
+
+<button class="text-xl bg-slate-950 text-white p-3 rounded m-10 "> Click Me </button>
+
+ithu normal oru button irukathu , suppose dark mode la iruntha entha mari irukanum ndratha namma responsive ah mathurathuku .. 
+dark nu oru class iruku ..
+
+(dark:bg-slate-300 dark:text-black)
+<button class="text-xl bg-slate-950 text-white p-3 rounded m-10 dark:bg-slate-300 dark:text-black"> Click Me </button>
+
+then body oda background um black ah maranum nu nenacha.. 
+<body class="bg-white dark:bg-black"> 
+
+default ah white color la irukum... dark mode select pannita black ah maridum.. 
+
+# extend options (configurations)
+extend: {
+    colors: {
+        'pure-red': '#f44747',
+        'rj-orange': '#e64a19'
+    },
+intha mari nammaley color ah create panni use pannikalam.. 
+text-rj-orange
+
+colors mariye font weight yum kudukalam.. 
+
+fontWeight: {
+    'rjbold' : 500
+    },
+
+font-rjbold
+
+ithey mari font size kooda extend la pottu anga irunthu use pannikalam.. 
+
+# override options 
+extend la new ah yethavathu venum naa create pannuvom.. 
+
+but already irukatha change pananum nu nenacha ??
+
+for example ovoru responsive class oda screen size enna nu mudivu pannikalam.. 
+
+go to -> tailwind css -> responsive design 
+anga already ovoru screen kum evlo width irukanum ndratha default ah yeluthi vachurukanga .. sm ku ivlo irukanum, md ku ivlo width , lg ivlo width etcc.. 
+intha maari 
+
+    Breakpoint prefix	  Minimum width	    CSS
+
+                    sm	  40rem (640px)	    @media (width >= 40rem) { ... }
+                    md	  48rem (768px)	    @media (width >= 48rem) { ... }
+                    lg	  64rem (1024px)	@media (width >= 64rem) { ... }
+                    xl	  80rem (1280px)	@media (width >= 80rem) { ... }
+                    2xl	  96rem (1536px)	@media (width >= 96rem) { ... }
+
+namaku venum naa atha change pannikalam..
+
+    screens: {
+        'tablet': '640px',
+        'laptop': '1024px',
+        'desktop': '1280px',
+        }
+
+then itha use pannikalam..
+    <button class="text-xl bg-rj-orange text-black font-rjbold p-3 rounded m-10 tablet:bg-blue-500 laptop:bg-yellow-200 desktop:bg-green-400  "> Click Me </button>
+tablet . laptop . desktop nu name kuduthathuku bathila md lg xl nu kooda kudukalam.. athey mari size yum namaku vendiya mari increase or decrease pannikalam.. 
+
+# Extract Components 
+    <button class="bg-pink-300 text-black border-2 p-4 rounded-lg tablet:bg-blue-500 laptop:bg-yellow-200 desktop:bg-green-400 m-10 "> Hey Hello </button>
+    <button class="bg-pink-300 text-black border-2 p-4 rounded-lg tablet:bg-blue-500 laptop:bg-yellow-200 desktop:bg-green-400 m-10 "> Welcome  </button>
+    <button class="bg-pink-300 text-black border-2 p-4 rounded-lg tablet:bg-blue-500 laptop:bg-yellow-200 desktop:bg-green-400 m-10 "> Hey you  </button>
+
+ipo intha mari 3 button iruku nu vachupom... ovoru time um ithuku class ivlo perusa yeluthitu irukathuku bathila oru component la store atha mattum class panikalam.. 
+
+    @layer components {
+        .click-btn {
+             @apply bg-pink-300 text-black border-2 p-4 rounded-lg tablet:bg-blue-500 laptop:bg-yellow-200 desktop:bg-green-400 m-10
+        }
+    }
+intha mari app.css kuduthutenaa.. next time class la "click-btn" ndratha mattum call pannikalam.. 
+
+        <button class="click-btn"> Hey Hello </button>
+        <button class="click-btn"> Welcome  </button>
+        <button class="click-btn"> Hey you  </button>
+just like this .... 
+
+# landing page Project setup
+
+create new blade file blog.blade.php 
+
+# Nav bar
+<div class="container"> 
+container nu div la kudukum bothu athu oru kuripitta width ah container kaga yeduhtukum .. 
+
+mx-auto -> itha kuduthom naa center ku vanthudum container left and right side oru space irukum .. entha screen la pathalum content center la irukum.. 
+
+flex space-x-6  ithula space enna pannum naaa.. x axis direction la flex ku space kudukum.. 
+
+- # Hero Section
+
+text-center -> text laam center ah vanthudum... 
+w-1/3 => width ah 3 ah consider panna athula 1/3 .. 
+
+# pricing section
