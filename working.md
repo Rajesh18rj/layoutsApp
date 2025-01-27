@@ -522,3 +522,25 @@ text-center -> text laam center ah vanthudum...
 w-1/3 => width ah 3 ah consider panna athula 1/3 .. 
 
 # pricing section
+
+<svg class="h-6 w-6 text-indigo-500"  ipdi svg file ku namma change pannanum nu nenacha .. 
+
+intha mari path la  <path fill="currentColor"      kudukanum.. 
+
+
+.
+button ah border oda center la fix pannanum nu nenacha
+
+athoda div la relative kuduthuttu , 
+ <div class="relative
+
+then button la absolute kuduthuttu position ah set panna vendithu thaan.. 
+
+<button class="absolute bottom-0 transform translate-y-5 -translate-x-16
+
+# story section 
+
+image full width yeduthukanum apdinu nenacha ,
+<img class=" w-full"
+
+

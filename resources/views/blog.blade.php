@@ -44,7 +44,7 @@
             <h1 class="text-2xl">Web Development</h1>
             <img class="h-40 w-40" src="{{ asset('images/website.png') }}" alt="">
             <p>
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
             </p>
         </div>
 
@@ -52,14 +52,15 @@
             <h1 class="text-2xl" >Mobile App Development</h1>
             <img class="h-40 w-40" src="{{ asset('images/mobile_content.png') }}" alt="">
             <p>
-                "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"            </p>
+                "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth.
+            </p>
         </div>
 
         <div class="w-1/3 text-center flex flex-col items-center">
             <h1 class="text-2xl">Design</h1>
             <img class="h-40 w-40" src="{{ asset('images/designer.png') }}" alt="">
             <p>
-                "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
+                "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue;
             </p>
         </div>
     </div>
@@ -71,21 +72,273 @@
                 <p class="text-2xl">Featured Plans are here</p>
             </div>
 
-            <div class="grid grid-cols-3 gap-4">
-                <div class="bg-gray-400 h-40 w-80 rounded-2xl hover:shadow-4xl">
-                    <h2 class="text-green-500">Basic</h2>
+            <div class="grid grid-cols-3 gap-4 mt-4">
+
+{{--                div 1--}}
+                <div class="relative mt-4 bg-indigo-100  w-80 rounded-2xl hover:shadow-2xl text-center ">
+                    <h1 class="font-bold text-5xl">$99</h1>
+                    <h2 class="text-green-500 mb-3 font-bold">Basic</h2>
+                    <p> All the Basic features are included</p>
+                    <ul class="ml-4 mb-10">
+                        <li class="flex items-center mt-4">
+                            <div>
+                                <svg class="h-6 w-6 text-indigo-500" text-indigo-500 viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
+                                </svg>
+                            </div>
+                            <div class="">
+                                Core Business System
+                            </div>
+                        </li>
+
+                        <li class="flex items-center mt-4">
+                            <div>
+                                <svg class="h-6 w-6 text-indigo-500" text-indigo-500 viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
+                                </svg>
+                            </div>
+                            <div class="">
+                                Core Business System
+                            </div>
+                        </li>
+
+                        <li class="flex items-center mt-4">
+                            <div>
+                                <svg class="h-6 w-6 text-indigo-500" text-indigo-500 viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
+                                </svg>
+                            </div>
+                            <div class="">
+                                Core Business System
+                            </div>
+                        </li>
+
+                        <li class="flex items-center mt-4">
+                            <div>
+                                <svg class="h-6 w-6 text-red-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle fill="currentColor"  opacity="0.5" cx="12" cy="12" r="10" stroke="#1C274C" stroke-width="1.5"/>
+                                    <path fill="currentColor"  d="M15 12H9" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="">
+                               Customized Features
+                            </div>
+                        </li>
+
+                        <li class="flex items-center mt-4">
+                            <div>
+                                <svg class="h-6 w-6 text-red-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle fill="currentColor"  opacity="0.5" cx="12" cy="12" r="10" stroke="#1C274C" stroke-width="1.5"/>
+                                    <path fill="currentColor"  d="M15 12H9" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="">
+                                Dual Infrastructure
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <button class="absolute bottom-0 transform translate-y-5 -translate-x-16 bg-indigo-500 text-white px-6 py-2 rounded-full mt-6 font-medium"> Get Started</button>
+
+                </div>
+{{--               div 2--}}
+                <div class="relative  w-80 rounded-2xl hover:shadow-2xl text-center border border-4 border-dashed border-indigo-500">
+                    <h1 class="font-bold text-5xl">$199</h1>
+                    <h2 class="text-green-500 mb-3 font-bold">Advanced</h2>
+                    <p> All the Basic features are included</p>
+                    <ul class="ml-4 mb-10">
+                        <li class="flex items-center mt-4">
+                            <div>
+                                <svg class="h-6 w-6 text-indigo-500" text-indigo-500 viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
+                                </svg>
+                            </div>
+                            <div class="">
+                                Core Business System
+                            </div>
+                        </li>
+
+                        <li class="flex items-center mt-4">
+                            <div>
+                                <svg class="h-6 w-6 text-indigo-500" text-indigo-500 viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
+                                </svg>
+                            </div>
+                            <div class="">
+                                Core Business System
+                            </div>
+                        </li>
+
+                        <li class="flex items-center mt-4">
+                            <div>
+                                <svg class="h-6 w-6 text-indigo-500" text-indigo-500 viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
+                                </svg>
+                            </div>
+                            <div class="">
+                                Core Business System
+                            </div>
+                        </li>
+
+                        <li class="flex items-center mt-4">
+                            <div>
+                                <svg class="h-6 w-6 text-indigo-500" text-indigo-500 viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
+                                </svg>
+                            </div>
+                            <div class="">
+                                Customized Features
+                            </div>
+                        </li>
+
+                        <li class="flex items-center mt-4">
+                            <div>
+                                <svg class="h-6 w-6 text-red-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle fill="currentColor"  opacity="0.5" cx="12" cy="12" r="10" stroke="#1C274C" stroke-width="1.5"/>
+                                    <path fill="currentColor"  d="M15 12H9" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="">
+                                Dual Infrastructure
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <button class="absolute bottom-0 transform translate-y-5 -translate-x-16 bg-indigo-500 text-white px-6 py-2 rounded-full mt-6 font-medium"> Get Started</button>
+                </div>
+{{--               div 3--}}
+                <div class="relative mt-4 bg-indigo-100  w-80 rounded-2xl hover:shadow-2xl text-center ">
+                    <h1 class="font-bold text-5xl">$299</h1>
+                    <h2 class="text-green-500 mb-3 font-bold">Business</h2>
+                    <p> All the Basic features are included</p>
+                    <ul class="ml-4 mb-10">
+                        <li class="flex items-center mt-4">
+                            <div>
+                                <svg class="h-6 w-6 text-indigo-500" text-indigo-500 viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
+                                </svg>
+                            </div>
+                            <div class="">
+                                Core Business System
+                            </div>
+                        </li>
+
+                        <li class="flex items-center mt-4">
+                            <div>
+                                <svg class="h-6 w-6 text-indigo-500" text-indigo-500 viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
+                                </svg>
+                            </div>
+                            <div class="">
+                                Core Business System
+                            </div>
+                        </li>
+
+                        <li class="flex items-center mt-4">
+                            <div>
+                                <svg class="h-6 w-6 text-indigo-500" text-indigo-500 viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
+                                </svg>
+                            </div>
+                            <div class="">
+                                Core Business System
+                            </div>
+                        </li>
+
+                        <li class="flex items-center mt-4">
+                            <div>
+                                <svg class="h-6 w-6 text-indigo-500" text-indigo-500 viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
+                                </svg>
+                            </div>
+                            <div class="">
+                                Customized Features
+                            </div>
+                        </li>
+
+                        <li class="flex items-center mt-4">
+                            <div>
+                                <svg class="h-6 w-6 text-indigo-500" text-indigo-500 viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
+                                </svg>
+                            </div>
+                            <div class="">
+                                Dual Infrastructure
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <button class="absolute bottom-0 transform translate-y-5 -translate-x-16 bg-indigo-500 text-white px-6 py-2 rounded-full mt-6 font-medium"> Get Started</button>
                 </div>
 
-                <div class="bg-gray-400 h-40 w-80 rounded-2xl hover:shadow-4xl">
-
-                </div>
-
-                <div class="bg-gray-400 h-40 w-80 rounded-2xl hover:shadow-4xl">
-
-                </div>
             </div>
         </div>
 
+    <!--Stories Section------------------------------------------------------------------------->
+    <div class="container mx-auto mt-12">
+        <div class="text-center">
+            <h1 >Recent Updates</h1>
+            <h1 class="text-5xl">Featured Stories</h1>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4">
+
+            <div class="bg-gray-200 rounded-2xl text-center hover:shadow-2xl" >
+                <img class="mt-4 w-full h-60" src="https://picsum.photos/200" alt="">
+                <h1 class="mt-4 text-2xl text-indigo-500">Google Rankings</h1>
+                <p class="font-thin my-4">Make it connect with every client world wide</p>
+                <a class="text-indigo-500 font-bold hover:text-black" href="">Read More..</a>
+            </div>
+
+            <div class="bg-gray-200 rounded-2xl text-center hover:shadow-2xl">
+                <img class="mt-4 w-full h-60" src="https://picsum.photos/200" alt="">
+                <h1 class="mt-4 text-2xl text-indigo-500">Communication</h1>
+                <p class="font-thin my-4">Best Communication for the Business</p>
+                <a class="text-indigo-500 font-bold hover:text-black" href="">Read More..</a>
+
+            </div>
+
+            <div class="bg-gray-200 rounded-2xl text-center hover:shadow-2xl">
+                <img class="mt-4 w-full h-60" src="https://picsum.photos/200" alt="">
+                <h1 class="mt-4 text-2xl text-indigo-500">Remote Working</h1>
+                <p class="font-thin my-4">Remote Connectivity for the Consistent </p>
+                <a class="text-indigo-500 font-bold hover:text-black" href="">Read More..</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Footer Section------------------------------------------------------------------------->
+    <footer class="bg-gray-200 mt-12 h-96">
+        <div class="container mx-auto bg-red-300 p-32">
+            <!-- 25% -->
+            <div class="w-1/4">
+                <p class="font-medium text-2xl">Rj Code</p>
+            </div>
+            <!-- 50% -->
+            <div class="w-1/2">
+                <div>
+                    <h2 class="text-2xl font-bold">Links</h2>
+                    <ul class="space-y-2 mt-4">
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- 25% -->
+            <div class="w-1/4">
+
+            </div>
+
+        </div>
+
+    </footer>
 
 
     </body>
