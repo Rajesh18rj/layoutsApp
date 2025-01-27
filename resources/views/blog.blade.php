@@ -63,8 +63,28 @@
             </p>
         </div>
     </div>
-    <!--Pricing ------------------------------------------------------------------------->
+    <!--Pricing Section------------------------------------------------------------------------->
+        <div class="container mx-auto mt-6">
+            <div class="text-center">
+                <h1 class="font-bold text-green-500 text-3xl">Pricing</h1>
+                <p class="text-2xl">Offers Multiple packages for Monthly and Yearly</p>
+                <p class="text-2xl">Featured Plans are here</p>
+            </div>
 
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-gray-400 h-40 w-80 rounded-2xl hover:shadow-4xl">
+                    <h2 class="text-green-500">Basic</h2>
+                </div>
+
+                <div class="bg-gray-400 h-40 w-80 rounded-2xl hover:shadow-4xl">
+
+                </div>
+
+                <div class="bg-gray-400 h-40 w-80 rounded-2xl hover:shadow-4xl">
+
+                </div>
+            </div>
+        </div>
 
 
 
