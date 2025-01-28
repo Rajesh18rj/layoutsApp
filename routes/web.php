@@ -19,3 +19,7 @@ Route::get('/home', function () {
 Route::get('/blog', function () {
     return view('blog');
 });
+
+Route::get('/google', function () {
+    return view('google');
+});
