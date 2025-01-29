@@ -23,3 +23,7 @@ Route::get('/blog', function () {
 Route::get('/google', function () {
     return view('google');
 });
+
+Route::get('/alp', function () {
+    return view('alphine_learn');
+});
