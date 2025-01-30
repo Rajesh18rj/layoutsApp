@@ -11,13 +11,13 @@
 
     </head>
     <body class="antialiased">
-        <div x-data="{
-            selectedImageUrl: 'https://images.unsplash.com/photo-1737994872505-385ecc9a06e7?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-            show: false,
-            inputValue: 'Hello'
-        }">
-            <img class="w-96 h-96" :class="{'hidden': !show }"  x-bind:src="selectedImageUrl" alt="">
-            <input type="text" :value="inputValue" :style="{color: 'red'}">
-        </div>
+
+
+    <section x-data="{ maxLength: 100 }">
+        <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
+        <textarea x-ref="message" @keyup="maxLength = 100 - $refs.message.value.length" id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your thoughts here..."></textarea>
+        <span x-text="maxLength + 'Characters Remaining'"></span>
+    </section>
+
     </body>
 </html>
