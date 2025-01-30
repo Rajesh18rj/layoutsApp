@@ -11,18 +11,13 @@
 
     </head>
     <body class="antialiased">
-
-        <div x-data="{name: 'Steve Rogers'}">
-
-            <div class="bg-green-400 p-4 m-4 rounded">
-                <span x-text="name"></span>
-            </div>
-
-            <div class="bg-slate-200 m-4 p-4 rounded">
-                <span x-text="name"></span>
-            </div>
-
+        <div x-data="{
+            selectedImageUrl: 'https://images.unsplash.com/photo-1737994872505-385ecc9a06e7?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            show: false,
+            inputValue: 'Hello'
+        }">
+            <img class="w-96 h-96" :class="{'hidden': !show }"  x-bind:src="selectedImageUrl" alt="">
+            <input type="text" :value="inputValue" :style="{color: 'red'}">
         </div>
-
     </body>
 </html>

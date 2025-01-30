@@ -157,3 +157,46 @@ intha mari oru Main div la pottu athuku , intha rendu div um kuduthaa.. Ipo rend
 
 # 3
 ## x-bind
+x-bind is used to dynamically bind HTML attributes to data in Alpine.js.
+
+## Example: Light Bulb ON/OFF
+
+```html
+<div x-data="{ isOn: false }">
+    <button x-bind:class="isOn ? 'bg-yellow-500' : 'bg-gray-500'"
+            x-on:click="isOn = !isOn">
+        Click to Toggle Light
+    </button>
+</div>
+```
+
+## How This Works:
+1️⃣ We start with `isOn: false` (the light is OFF).  
+2️⃣ `x-bind:class="isOn ? 'bg-yellow-500' : 'bg-gray-500'"` changes the button’s color:  
+   - If `isOn` is `true`, the button turns **yellow** (light is ON).  
+   - If `isOn` is `false`, the button is **gray** (light is OFF).  
+3️⃣ `x-on:click="isOn = !isOn"` flips `isOn` every time you click (turning the light on/off).  
+
+## 🔥 What Happens When You Click?
+- 💡 **First click** → Light turns ON (Yellow Button)  
+- 💡 **Second click** → Light turns OFF (Gray Button)  
+- 💡 **Third click** → Light turns ON again!  
+
+It's just like flipping a real light switch! 🎉
+
+### Why use x-bind?
+It allows you to dynamically update attributes like src, class, disabled, etc., based on data changes.
+
+## Example 2
+
+```html
+<div x-data="{
+    selectedImageUrl: 'https://images.unsplash.com/photo-1737994872505-385ecc9a06e7?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    show: false,
+    inputValue: 'Hello'
+}">
+    <img class="w-96 h-96" :class="{'hidden': !show }"  x-bind:src="selectedImageUrl" alt="">
+    <input type="text" :value="inputValue" :style="{color: 'red'}">
+</div>
+```
+Note: We can use x-bind shorthand `:` instead of using `x-bind` both are doing same job.. 
